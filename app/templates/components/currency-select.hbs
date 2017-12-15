@@ -1,0 +1,7 @@
+<select class="form-control" onchange={{action "updateValue" value="target.value"}}>
+  {{#each currency as |value|}}
+    <option value="{{value.value}}" selected="{{is-equal value.value isSelected}}">{{value.name}}</option>
+  {{/each}}
+</select>
+
+{{yield}}

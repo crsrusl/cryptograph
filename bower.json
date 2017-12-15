@@ -1,0 +1,21 @@
+{
+  "name": "cryptograph",
+  "description": "Small description for cryptograph goes here",
+  "main": "",
+  "authors": [
+    "Chris Russell <hello@chrisrussell.co>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "chartjs#^2.7.1",
+    "moment": "^2.19.4"
+  }
+}

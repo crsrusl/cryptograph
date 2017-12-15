@@ -1,0 +1,11 @@
+<strong>Price:</strong> {{price}} <i>{{fiatCurrency}}</i>
+<br>
+<strong>Difference: </strong>
+{{#if differencePositive}}
+  <span class="text-success">{{difference}}</span>
+{{else}}
+  <span class="text-danger">{{difference}}</span>
+{{/if}}
+
+<i>{{fiatCurrency}}</i>
+{{yield}}

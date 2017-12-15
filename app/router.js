@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('coins');
+  this.route('coin', {path: '/coins/:id'});
+  this.route('loading');
 });
 
 export default Router;

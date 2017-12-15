@@ -1,0 +1,6 @@
+<td>{{coin.SortOrder}}</td>
+<td>{{coin.FullName}}</td>
+<td>{{coin.TotalCoinSupply}}</td>
+<td>{{#link-to "coin" coin.Name (query-params currency='GBP' unit='hour' view='day' limit=168)}}View{{/link-to}}</td>
+
+{{yield}}

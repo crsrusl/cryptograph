@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-9">
+    {{chart-history model=model}}
+  </div>
+  <div class="col-md-3">
+
+    <div class="card">
+      <div class="card-header">
+        Stats
+      </div>
+      <div class="card-body">
+        {{current-price model=model}}
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        Filter
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <strong>Date range</strong>
+            {{date-select}}
+          </div>
+          <div class="form-group">
+            <strong>Currency</strong>
+            {{currency-select}}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{outlet}}
