@@ -10,6 +10,9 @@ export default Component.extend({
   }, {
     name: 'USD',
     value: 'USD'
+  }, {
+    name: 'BTC',
+    value: 'BTC'
   }],
   didInsertElement() {
     this.set('isSelected', this.get('router').router.currentState.routerJs.state.fullQueryParams.currency)

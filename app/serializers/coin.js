@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.JSONAPISerializer.extend({
-  normalizeQueryResponse (store, primaryModelClass, payload, id, requestType) {
+  normalizeQueryResponse (store, primaryModelClass, payload) {
     let results = [];
     let recordId = 0;
     

@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.JSONSerializer.extend({
-  normalizeFindAllResponse(store, primaryModelClass, payload, id, requestType) {
+  normalizeFindAllResponse(store, primaryModelClass, payload) {
     let results = [];
     
     for (let key in payload) {

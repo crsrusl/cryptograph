@@ -24,7 +24,6 @@ export default Controller.extend({
   }),
   actions: {
     goToPage(number) {
-      //let page = this.get('currentPage') + 1;
       this.set('currentPage', number);
       this.set('page', number)
     },
